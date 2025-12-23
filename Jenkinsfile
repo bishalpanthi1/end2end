@@ -132,9 +132,5 @@ pipeline {
                 sh "docker rmi ${NEXUS_REGISTRY}/${IMAGE_NAME}:${params.VERSION_TAG} || true"
             }
         }
-        failure {
-            echo 'Build Failed. Stopping Container.'
-            sh "docker rm -f ${CONTAINER_NAME} || true"
-        }
     }
 }
