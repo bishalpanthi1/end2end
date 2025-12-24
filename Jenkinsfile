@@ -11,8 +11,8 @@ pipeline {
         NEXUS_REGISTRY = 'registry.nchldemo.com'
         IMAGE_NAME     = 'e2e-app-trainer'
         NEXUS_CRED     = 'nexus-auth'
-        CONTAINER_NAME = 'e2e-app-trainer'
-        APP_PORT       = '9091' // Add your unique port here
+        CONTAINER_NAME = 'e2e-app-bishalpanthi'
+        APP_PORT       = '9092' // Add your unique port here
     }
 
     tools {
